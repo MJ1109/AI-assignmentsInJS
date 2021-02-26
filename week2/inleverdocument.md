@@ -13,7 +13,7 @@ Na deze les had ik gelijk zin om zelf meer te leren over AR en alles wat daarbij
 
 De lessen die er op dinsdag en woensdag gegeven werden, vond ik persoonlijk minder interessant. Er waren interessante onderdelen in de lessen, maar over het algemeen trok het mij niet heel erg. 
 
-De laatste les daarentegen vond ik wel heel erg interessant. Deze les ging over AI x Design. Dat komt neer op ontwerpen met AI. 
+De laatste les daarentegen vond ik wel heel erg interessant. Deze les ging over AI x Design. Dat komt neer op ontwerpen met AI. Tijdens deze les heb ik geleerd hoe AI werkt en wat hij 'denkt'. Dit was erg handig om te weten, omdat ik het belangrijk vind om te weten wat er achter de schermen van de AI gebeurd. Ook vond ik de opdracht leuk die eraan gekoppeld was. 
 
 ## Teachable machine
 
