@@ -21,4 +21,7 @@ Ik hoop dat ik de komende periode kan focussen op AR, het modelleren ervan en de
 
 ## Teachable machine
 
-- Plaats code voor de opdracht van week 2 in deze folder.
+De opdracht die ik wilde maken, is een 'mood-checker'. Deze checker controleert hoe ik achter mijn pc zit: blij, neutraal of gefrustreerd. 
+Als ik blij of neutraal zit, is er niks aan de hand. Dan moet er een positief/motiverend bericht worden getoond, zodat deze gemoedstoestand blijft. Als ik gefrustreerd achter mijn pc zit, dan betekent het dus dat er iets aan de hand is. Hier wil ik dus een bericht aan koppelen waarin staat dat ik even een pauze moet nemen, zodat de frustratie afneemt. Als de frustratie weg is, dan kan ik weer verder werken. Ik heb namelijk opgemerkt dat ik niet goed functioneer als ik gefrustreerd ben. :$
+
+Deze checker zou er dus aan mee kunnen helpen dat ik beter gemotiveerd ben en dat ik bewuster wordt van mijn emoties tijdens het werk. 
