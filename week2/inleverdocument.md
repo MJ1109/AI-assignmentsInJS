@@ -17,6 +17,7 @@ De laatste les daarentegen vond ik wel heel erg interessant. Deze les ging over 
 
 Na deze week heb ik een veel beter idee gekregen over de manieren waarop AI toegepast kan worden in het dagelijkse leven. Voor deze week had ik het idee dat het lastig was om "zomaar" AI toe te passen, maar ik vergat te kijken naar de vele mogelijkheden ervan. 
 Deze week heeft mij geïnspireerd om te kijken naar AR. Dit trekt mij het meeste aan en hier wil ik graag meer over leren. 
+Ik hoop dat ik de komende periode kan focussen op AR, het modelleren ervan en de code die erachter zit. 
 
 ## Teachable machine
 
