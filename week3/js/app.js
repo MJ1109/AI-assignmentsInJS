@@ -1,6 +1,6 @@
 console.log("hello");
 
-const knn = new kNear(3)
+const knn = new kNear(3)//de 3 staat voor de 3 punten waarmee er vergeleken wordt qua NN.
 
 //learn the cat
 knn.learn([10, 1, 2], "cat")
@@ -15,5 +15,5 @@ knn.learn([24, 9, 9.7], "dog")
 console.log("learning completed!")
 
 //hij heeft nu geleerd, dus predicten kan starten
-let unknownAnimal = [12,8, 10]
-console.log(`I think this is a ${knn.classify(unknownAnimal)}`)
+let unknownWebcamImage = [35, 2, 9]
+console.log(`I think this is a ${knn.classify(unknownWebcamImage)}`)
