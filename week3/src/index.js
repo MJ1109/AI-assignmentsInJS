@@ -17,6 +17,13 @@ let fingerLookupIndices = {
     pinky: [0, 17, 18, 19, 20]
 }
 
+let data;
+const knn = new kNear(3);
+
+let trainButton = document.getElementById("train");
+let classifyButton = document.getElementById("classify");
+
+let predictionTxt = document.getElementById("prediction");
 
 //
 // start de applicatie
@@ -26,6 +33,20 @@ async function main() {
     const video = await setupCamera()
     video.play()
     startLandmarkDetection(video)
+
+    trainButton.addEventListener("click", train);
+    classifyButton.addEventListener("click", classify);
+}
+
+function train(){
+    let labelTxt = document.getElementById("label").value;
+    knn.learn(data.split`,`.map(x=>+x), labelTxt) //all the number from the array
+    console.log(`training ${labelTxt}`);
+}
+
+function classify(){
+    let prediction = knn.classify(data.split`,`.map(x=>+x));
+    predictionTxt.innerHTML = prediction;
 }
 
 //
@@ -107,12 +128,12 @@ async function predictLandmarks() {
 // toon de eerste 20 waarden in een log - elk punt heeft een X, Y, Z waarde
 //
 function logData(predictions) {
-    let str = ""
+    data = 0;
     // console.log(predictions[0].landmarks)
     for (let i = 0; i < 20; i++) {
-        str += predictions[0].landmarks[i][0] + ", " + predictions[0].landmarks[i][1] + ", " + predictions[0].landmarks[i][2] + ", "
+        data += predictions[0].landmarks[i][0] + ", " + predictions[0].landmarks[i][1] + ", " + predictions[0].landmarks[i][2] + ", "
     }
-    log.innerText = str
+    log.innerText = data
 }
 
 //
