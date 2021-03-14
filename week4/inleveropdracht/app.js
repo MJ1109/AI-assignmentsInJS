@@ -4,9 +4,9 @@ import { VegaTree } from "./libraries/vegatree.js"
 //
 // DATA Pregnant,Glucose,Bp,Skin,Insulin,bmi,Pedigree,Age,Label
 //
-const csvFile = "./data/diabetes.csv" //data ingeladen
-const trainingLabel = "Label" //label van deze dataset heet label, deze kijkt of er diabetes is (1) of niet (0)
-const ignoredColumns = ['Skin']  //wil ik negeren
+const csvFile = "./data/stroke.csv" //data ingeladen
+const trainingLabel = "stroke" //label van deze dataset heet stroke, deze kijkt of er een stroke is (1) of niet (0)
+const ignoredColumns = ['id']  //wil ik negeren
 
 //
 // laad csv data als json
@@ -41,29 +41,31 @@ function trainModel(data) {
     let visual = new VegaTree('#view', 1000, 800, decisionTree.toJSON())
 
     // todo : maak een prediction met een sample uit de testdata
-    // DATA Pregnant,Glucose,Bp,Skin,Insulin,bmi,Pedigree,Age,Label
-     let diabetes = {
-        Pregnant: "1",
-        Glucose:"89",
-        Bp:"65",
-        Skin: "1",
-        Insulin: "0",
-        bmi: "30.5",
-        Pedigree: "0.525",
-        Age: "29"
-        //Label: "0"
+    // DATA id,gender,age,hypertension,heart_disease,ever_married,work_type,Residence_type,avg_glucose_level,bmi,smoking_status,stroke
+     let stroke = {
+        id: "",
+        gender:"",
+        age:"",
+        hypertension: "",
+        heart_disease: "",
+        ever_married: "",
+        work_type: "",
+        Residence_type: "",
+        avg_glucose_level:"",
+        bmi:"",
+        smoking_status:""
+
+        //stroke: "0"
     }
 
-
-
     // todo : bereken de accuracy met behulp van alle test data
-    testDiabetes(testData, decisionTree)
-
+    testStroke(testData, decisionTree)
 
 }
-function testDiabetes(testData, decisionTree){
+
+function testStroke(testData, decisionTree){
     const patientWithoutLabel = Object.assign({}, testData)
-    delete patientWithoutLabel.Label
+    delete patientWithoutLabel.stroke
 
     let correctPredictions=0;
     let totalPredictions = testData.length;
@@ -72,7 +74,7 @@ function testDiabetes(testData, decisionTree){
         let prediction = decisionTree.predict(patientWithoutLabel[i])
         console.log(`The prediction is: ${prediction}`)
         
-        if (prediction == testData[i].Label){
+        if (prediction == testData[i].stroke){
             correctPredictions++
             console.log('This prediction was correct!')
         }
