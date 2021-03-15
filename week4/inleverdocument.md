@@ -15,7 +15,8 @@ Ik vond het erg lastig om de loop voor de accuracy te maken, maar dit is na hulp
 
 Ik heb ook geprobeerd om andere datasets in te laden. Het viel mij hierin op dat het makkelijker was als de columnamen bestonden uit één woord, ipv meerdere woorden. 
 Dit is ook de rede waarvoor ik mijn dataset keuze heb aangepast. Als eerste was mijn 'extra uitdaging' dataset een dataset waarmee ik wilde predicten wat de afkomst was van de studenten, gebaseerd op de resultaten. 
-Omdat deze dataset onhandige namen bevatte, heb ik gekozen voor de "stroke-dataset". Hiermee wil ik predicten of iemand een beroerte kan krijgen of niet en wat de accuracy van deze prediction is. Ondanks dat in mijn ogen de diabetes- en de stroke dataset erg op elkaar lijken, is de accuracy in deze dataset veel hoger, namelijk 98,33%. 
+Omdat deze dataset onhandige namen bevatte, heb ik gekozen voor de "stroke-dataset". Hiermee wil ik predicten of iemand een beroerte kan krijgen of niet en wat de accuracy van deze prediction is. Ondanks dat in mijn ogen de diabetes- en de stroke dataset erg op elkaar lijken, is de accuracy in deze dataset veel hoger, namelijk 98,33%.
+In de console.log is heb ik wel al kunnen laten zien of een prediction correct is of niet. Dit zou eventueel uitgewerkt kunnen worden in een matrix tabel, maar is mij nog niet gelukt. 
 
 Verder heb ik alleen wijzigingen aangebracht aan het app.js bestand. De andere bestanden zijn afkomstig uit de instructies van de les. 
 
